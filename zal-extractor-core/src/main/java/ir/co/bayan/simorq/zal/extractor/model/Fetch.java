@@ -129,7 +129,8 @@ public class Fetch extends Function {
 	@XmlAttribute(required = true)
 	public void setEngine(String engine) {
 		this.engine = engine;
-		evaluator = EvaluatorFactory.getInstance().getEvaluator(engine);
+		//TODO getInstance has been removed.
+		//evaluator = EvaluatorFactory.getInstance().getEvaluator(engine);
 	}
 
 	@Override
